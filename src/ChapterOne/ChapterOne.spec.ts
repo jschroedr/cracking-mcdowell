@@ -23,3 +23,22 @@ describe('Test set() collision', () => {
 });
 
 
+// TODO: TEST ArrayList
+
+// TODO: TEST StringBuilder
+
+
+/**
+ * ChapterOne Questions Test Suite
+ */
+const questions = new ChapterOne.Questions();
+
+
+describe('Test Questions.isUnique() and Questions.isUniquePrimitive()', () => {
+  test('', () => {
+    expect(questions.isUnique('abcd')).toBe(true);
+    expect(questions.isUnique('aacd')).toBe(false);
+    expect(questions.isUniquePrimitive('abcd')).toBe(true);
+    expect(questions.isUniquePrimitive('acda')).toBe(false);
+  });
+});
